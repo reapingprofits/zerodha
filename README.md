@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<!-- A Kite button will be generated inside this container //-->
 
-You can use the [editor on GitHub](https://github.com/reapingprofits/zerodha/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<br />
+<div id="default-button">
+</div>
+<!-- The basket will be linked to this element's onClick //-->
+<button id="custom-button">place the basket order</button>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- Include the plugin //-->
+<script src="https://kite.trade/publisher.js?v=3"></script>
 
-### Markdown
+<script>
+// Only run your custom code once KiteConnect has fully initialised.
+// Use KiteConnect.ready() to achieve this.
+KiteConnect.ready(function() {
+    // Initialize a new Kite instance ,HERE IS YOUR API KEY.
+    // You can initialize multiple instances if you need.
+    var kite = new KiteConnect("t67801tqkxq010mu");<div dir="ltr" style="text-align: left;" trbidi="on">
+<!-- A Kite button will be generated inside this container //-->
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<br />
+<div id="default-button">
+</div>
+<!-- The basket will be linked to this element's onClick //-->
+<button id="custom-button">Buy the basket</button>
 
-```markdown
-Syntax highlighted code block
+<!-- Include the plugin //-->
+<script src="https://kite.trade/publisher.js?v=3"></script>
 
-# Header 1
-## Header 2
-### Header 3
+<script>
+// Only run your custom code once KiteConnect has fully initialised.
+// Use KiteConnect.ready() to achieve this.
+KiteConnect.ready(function() {
+    // Initialize a new Kite instance.
+    // You can initialize multiple instances if you need.
+    var kite = new KiteConnect("qkuumk5wx4jnqzht");kite.add
+({"tradingsymbol": "HINDUNILVR", "exchange": "NSE", "transaction_type":"SELL","order_type":"LIMIT","product":"MIS","price":2160.65,"quantity":34,"variety":"BO","stoploss":7.35,"squareoff":15,"readonly": true});kite.add
+({"tradingsymbol": "JSWSTEEL", "exchange": "NSE", "transaction_type":"BUY","order_type":"LIMIT","product":"MIS","price":257.3,"quantity":147,"variety":"BO","stoploss":1.7,"squareoff":3.5,"readonly": true});kite.add
+({"tradingsymbol": "BHARTIARTL", "exchange": "NSE", "transaction_type":"BUY","order_type":"LIMIT","product":"MIS","price":419.1,"quantity":108,"variety":"BO","stoploss":2.3,"squareoff":5,"readonly": true});kite.add
+({"tradingsymbol": "JUSTDIAL", "exchange": "NSE", "transaction_type":"BUY","order_type":"LIMIT","product":"MIS","price":504.2,"quantity":50,"variety":"BO","stoploss":4.7,"squareoff":10,"trailing_stoploss":1,"readonly": true});kite.add
+({"tradingsymbol": "RBLBANK", "exchange": "NSE", "transaction_type":"BUY","order_type":"LIMIT","product":"MIS","price":346.6,"quantity":78,"variety":"BO","stoploss":3.2,"squareoff":6.5,"readonly": true});kite.add
+({"tradingsymbol": "TORNTPHARM", "exchange": "NSE", "transaction_type":"SELL","order_type":"LIMIT","product":"MIS","price":1930.5,"quantity":20,"variety":"BO","stoploss":12.2,"squareoff":25.7,"readonly": true});kite.add
+({"tradingsymbol": "BHARATFORG", "exchange": "NSE", "transaction_type":"BUY","order_type":"LIMIT","product":"MIS","price":461.7,"quantity":58,"variety":"BO","stoploss":4.25,"squareoff":8.6,"readonly": true});kite.add
+({"tradingsymbol": "ESCORTS", "exchange": "NSE", "transaction_type":"SELL","order_type":"LIMIT","product":"MIS","price":653.8,"quantity":30,"variety":"BO","stoploss":5,"squareoff":10,"readonly": true});kite.add
+({"tradingsymbol": "EXIDEIND", "exchange": "NSE", "transaction_type":"SELL","order_type":"LIMIT","product":"MIS","price":192.1,"quantity":277,"variety":"BO","stoploss":0.9,"squareoff":2,"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});kite.add
+({"readonly": true});
 
-- Bulleted
-- List
+    // Register an (optional) callback.
+    kite.finished(function(status, request_token) {
+        alert("Finished. Status is " + status);
+    });
 
-1. Numbered
-2. List
+    // Render the in-built button inside a given target
+    kite.renderButton("#default-button");
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/reapingprofits/zerodha/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    // OR, link the basket to any existing element you want
+    kite.link("#custom-button");
+});
+</script><br />
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<br /></div>
+</div>
